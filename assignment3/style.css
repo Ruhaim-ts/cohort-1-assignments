@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'helvetica neue',helvetica,arial,sans-serif;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-image: url(./assets/8b0023f3-0ec7-4d69-81cf-eb08a52586fa.png);
+    background-size: cover;
+    overflow: hidden;
+}
+main .head{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    color: white;
+}
+main .head p{
+    position: absolute;
+    top :50%;
+    right: 5%;
+}
+main .head h1{
+    position: absolute;
+    font-weight: 300;
+    top: 60%;
+    left: 5%;
+}
+main .container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 5%;
+    gap: 30px;
+}
+main .container .card{
+    width: 20%;
+    height: 400px;
+    background-color: #463f5d;
+    border-radius: 30px;
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
+main .container .card .image{
+    width: 90%;
+    height: 200px;
+    background-color: rebeccapurple;
+    margin: 5%;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.card .details{
+    width: 100%;
+    height: fit-content;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.details .name{
+    font-size: 20px;
+}
+.details .side{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+.side .likecount{
+    margin-right: 10px;
+}
+.side .like{
+    color: rgba(255, 255, 255, 0.821);
+    font-size: 23px;
+}
+.card .purchase{
+    width: 80%;
+    height: fit-content;
+    padding: 10px;
+
+    border-radius: 30px;
+    margin: 50px 10%;
+    border: 2px solid #a97fdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .purchase button{
+    font-size: 30px;
+    background: none;
+    border: none;
+    
+    color: white;
+    text-decoration: none;
+}
