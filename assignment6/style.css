@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+.hero {
+  width: 100%;
+  height: 95%;
+  background-image: url(./assets/AlpineBerry_mobile.webp);
+  position: relative;
+  background-size: cover;
+  font-size: 18px;
+}
+header {
+  width: 100%;
+  height: fit-content;
+  padding: 5px;
+  background-color: #2a2857;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+header .head h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: white;
+}
+.nav {
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px;
+  padding-top: 0;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  padding: 0 25px;
+  font-size: 1vw;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+nav .left a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: black;
+  font-weight: 300;
+  margin-right: 5px;
+}
+nav .left span {
+  margin-right: 5px;
+}
+nav .left a .icon {
+  width: 30px;
+  height: 40px;
+  background-color: #7cdeff;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+nav .left .menu{
+    display: none;
+}
+nav .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+nav .right a {
+  text-decoration: none;
+  font-size: 0.8em;
+  color: black;
+  font-weight: 300;
+  margin-right: 5px;
+  word-spacing: 10px;
+}
+nav .right .cart {
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+}
+.hero .content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 40px;
+  color: white;
+}
+.hero .content h1 {
+  font-size: 4.6em;
+
+  font-weight: 300;
+  line-height: 100px;
+}
+.hero .content p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+.hero .content button {
+  width: 200px;
+  height: 60px;
+  border-radius: 35px;
+  font-size: 1em;
+  background-color: #2a2857;
+  padding: 10px;
+  color: white;
+}
+.hero .bottom-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -25px;
+  right: 10px;
+  background-color: #2a2857;
+  color: white;
+  font-size: 2em;
+}
+.hero .accesicon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 25px;
+  left: 10px;
+  background-color: #60c6a6;
+  color: white;
+  font-size: 2em;
+}
+.sectionSecond {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #FBF9EB;
+}
+.sectionSecond .quote {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: 300;
+  color:black;
+}
+.sectionSecond .head{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.sectionSecond .head h1{
+    font-size: 3.5em;
+    text-transform: uppercase;
+    border: 1px solid black;
+    background-color: #DAAEEA;
+    padding: 10px;
+    border-radius: 15px;
+    transform: rotate(-4deg);
+}
+.sectionSecond .container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: 1px;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    white-space: nowrap;
+    padding:  0 15px;
+    gap: 20px;
+}
+.sectionSecond .container .cards{
+    width: 370px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+.container .cards .image{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+}
+.cards .image .cardhead{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.image .cardhead h1{
+    font-size: 2em;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 15px;
+}
+.image .cardbottom{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.cardbottom .add{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.container .cards .maincontent{
+    will-change: 100%;
+    height: fit-content;
+    display: flex;
+    white-space: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+.cards .maincontent h1{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.cards .maincontent h6{
+    font-size: 1em;
+    font-weight: 300;
+}
+.cards .maincontent p{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.sectionSecond .exploreMore{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.sectionSecond .exploreMore button{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: #2a2857;
+    border-radius: 25px;
+    color: white;
+}
+@media (max-width: 1024px) {
+    nav .left a{
+        display: none;
+    }
+    nav .right a{
+        display: none;
+    }
+    .nav .right .cart{
+        display: flex;
+        font-size: 3em;
+    }
+
+    nav .left .menu{
+        font-size: 2em;
+        display: flex;
+    }
+    nav .left .menu i{
+        font-size: 3em;
+        font-weight: 100;
+    }
+    .hero .content{
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        align-items: center;
+        margin-right: 30px;
+        overflow: hidden;
+    }
+    .hero .content h1{
+        font-size: 3em;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    .hero .content button{
+        width: 100%;
+        margin-right: 30px;
+    }
+   .sectionSecond h1{
+    font-size: 1.5em;
+   }
+   .sectionSecond .head{
+    margin: 0 0 40px 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+   }
+   .sectionSecond .head h1{
+    font-size: 2em;
+   }
+}
